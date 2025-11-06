@@ -1,0 +1,6 @@
+Requirement already satisfied: pillow in /home/pawatchun/miniconda3/envs/videolm/lib/python3.10/site-packages (12.0.0)
+Requirement already satisfied: opencv-python in /home/pawatchun/miniconda3/envs/videolm/lib/python3.10/site-packages (4.12.0.88)
+Requirement already satisfied: numpy in /home/pawatchun/miniconda3/envs/videolm/lib/python3.10/site-packages (2.2.6)
+Requirement already satisfied: tqdm in /home/pawatchun/miniconda3/envs/videolm/lib/python3.10/site-packages (4.67.1)
+Requirement already satisfied: decord in /home/pawatchun/miniconda3/envs/videolm/lib/python3.10/site-packages (0.6.0)
+
