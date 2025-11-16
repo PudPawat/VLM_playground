@@ -9,6 +9,7 @@ A powerful Video Language Model for Question Answering built on top of Qwen2-VL,
 - 🚀 **Multiple Model Sizes**: Support for 2B, 7B, and 72B parameter models
 - 🔧 **Flexible Configuration**: Customizable frame extraction and processing
 - 📦 **Easy to Use**: Simple API for video QA tasks
+- 📊 **Advanced Evaluation**: Multiple NLP-based evaluation metrics (semantic similarity, BLEU, ROUGE, fuzzy matching, contains matching)
 
 ## Installation
 
@@ -256,6 +257,16 @@ If you use this code, please cite the Qwen2-VL paper:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Evaluation
+
+VideoLM includes comprehensive evaluation tools for VideoQA tasks:
+
+- **Zero-shot Evaluation**: Run evaluation on SQA dataset with `evaluate_sqa.py`
+- **Multiple Metrics**: Exact match, semantic similarity, BLEU, ROUGE, fuzzy matching, and contains matching
+- **Detailed Results**: JSON output with per-sample metrics and summary statistics
+
+See [EVALUATION.md](EVALUATION.md) and [NLP_EVALUATION.md](NLP_EVALUATION.md) for detailed evaluation documentation.
 
 ## Acknowledgments
 
