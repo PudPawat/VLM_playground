@@ -8,6 +8,8 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 from tqdm import tqdm
 import argparse
+import torch
+import gc
 
 from videolm import VideoLM
 from videolm.evaluators import AnswerEvaluator
@@ -89,7 +91,8 @@ def evaluate(
     samples: List[Dict],
     output_file: str = None,
     max_samples: int = None,
-    use_nlp_eval: bool = True
+    use_nlp_eval: bool = True,
+    clear_cache: bool = True
 ) -> Dict:
     """
     Evaluate model on SQA dataset
@@ -217,11 +220,63 @@ def evaluate(
             
             results.append(result)
             
+            # Clear GPU memory after each sample to prevent OOM
+            if clear_cache and torch.cuda.is_available():
+                torch.cuda.empty_cache()
+                gc.collect()
+            
+        except torch.cuda.OutOfMemoryError as e:
+            # CUDA OOM - clear cache and raise to stop execution
+            print(f"\n❌ CUDA Out of Memory Error processing {video_path}")
+            print(f"Error: {str(e)}")
+            
+            # Clear GPU memory
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+                gc.collect()
+                print(f"GPU memory cleared. Free memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB")
+            
+            print("\n⚠️  Stopping evaluation due to CUDA OOM error.")
+            print("Suggestions:")
+            print("  - Use --load-in-4bit flag for quantization")
+            print("  - Use smaller model (--model-name Qwen/Qwen2-VL-2B-Instruct)")
+            print("  - Reduce --max-frames (e.g., --max-frames 4)")
+            print("  - Process fewer samples at once (--max-samples)")
+            
+            # Save partial results before exiting
+            if output_file:
+                print(f"\n💾 Saving partial results to {output_file}...")
+                with open(output_file, 'w') as f:
+                    json.dump({
+                        'accuracy': correct / total if total > 0 else 0.0,
+                        'accuracies': {method: counts['correct'] / counts['total'] if counts['total'] > 0 else 0.0 
+                                     for method, counts in metrics.items()},
+                        'correct': correct,
+                        'total': total,
+                        'metrics': metrics,
+                        'results': results,
+                        'error': 'CUDA_OUT_OF_MEMORY',
+                        'error_message': str(e),
+                        'stopped_at_sample': len(results)
+                    }, f, indent=2)
+            
+            raise RuntimeError(f"CUDA Out of Memory. Evaluation stopped at sample {len(results) + 1}/{len(samples)}") from e
+            
         except Exception as e:
-            print(f"Error processing {video_path}: {str(e)}")
+            error_msg = str(e)
+            print(f"Error processing {video_path}: {error_msg}")
+            
+            # Check if it's a memory-related error
+            if "out of memory" in error_msg.lower() or "cuda" in error_msg.lower():
+                print("\n⚠️  Memory-related error detected. Clearing GPU cache...")
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                    gc.collect()
+                print("Consider using --load-in-4bit or reducing --max-frames")
+            
             result = {
                 **sample,
-                'predicted_answer': f'ERROR: {str(e)}',
+                'predicted_answer': f'ERROR: {error_msg}',
                 'correct': False
             }
             if nlp_evaluator:
@@ -240,6 +295,11 @@ def evaluate(
                 })
             results.append(result)
             total += 1
+            
+            # Clear GPU memory after error
+            if clear_cache and torch.cuda.is_available():
+                torch.cuda.empty_cache()
+                gc.collect()
     
     # Calculate accuracies for all methods
     accuracies = {}
@@ -287,7 +347,7 @@ def main():
     parser.add_argument(
         '--model-name',
         type=str,
-        default='Qwen/Qwen2-VL-7B-Instruct',
+        default='Qwen/Qwen2-VL-1B-Instruct', # Qwen/Qwen2-VL-2B-Instruct, Qwen/Qwen2-VL-7B-Instruct, Qwen/Qwen2-VL-72B-Instruct
         help='Model name or path'
     )
     parser.add_argument(
@@ -324,6 +384,11 @@ def main():
         action='store_true',
         help='Disable NLP-based evaluation methods'
     )
+    parser.add_argument(
+        '--no-clear-cache',
+        action='store_true',
+        help='Disable automatic GPU cache clearing between samples'
+    )
     
     args = parser.parse_args()
     
@@ -350,6 +415,25 @@ def main():
     )
     print(f"Loaded {len(samples)} samples")
     
+    # Check GPU memory before starting
+    if torch.cuda.is_available():
+        print(f"\nGPU Memory Status:")
+        for i in range(torch.cuda.device_count()):
+            props = torch.cuda.get_device_properties(i)
+            allocated = torch.cuda.memory_allocated(i) / 1e9
+            reserved = torch.cuda.memory_reserved(i) / 1e9
+            total = props.total_memory / 1e9
+            free = total - reserved
+            
+            print(f"  GPU {i} ({props.name}):")
+            print(f"    Total: {total:.2f} GB | Allocated: {allocated:.2f} GB | Free: {free:.2f} GB")
+        
+        # Clear any existing cache
+        if not args.no_clear_cache:
+            print("\nClearing GPU cache before starting...")
+            torch.cuda.empty_cache()
+            gc.collect()
+    
     # Initialize model
     print(f"\nInitializing model: {args.model_name}")
     model = VideoLM(
@@ -365,7 +449,8 @@ def main():
         samples=samples,
         output_file=args.output or f'sqa_{args.split}_results.json',
         max_samples=args.max_samples,
-        use_nlp_eval=not args.no_nlp_eval
+        use_nlp_eval=not args.no_nlp_eval,
+        clear_cache=not args.no_clear_cache
     )
     
     # Print summary

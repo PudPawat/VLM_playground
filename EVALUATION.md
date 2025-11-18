@@ -138,6 +138,9 @@ See [NLP_EVALUATION.md](NLP_EVALUATION.md) for detailed information about each m
 - Use `--load-in-4bit` flag
 - Use smaller model variant
 - Reduce `--max-frames`
+- The script now automatically clears GPU cache between samples
+- If OOM occurs, the script will stop and save partial results
+- Clear GPU memory manually: `python utils/clear_gpu_memory.py`
 
 **Slow processing:**
 - Use GPU if available
