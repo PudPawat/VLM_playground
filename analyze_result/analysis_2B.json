@@ -1,0 +1,1593 @@
+{
+  "summary": {
+    "total_samples": 3519,
+    "overall_accuracies": {
+      "exact_match": 0.0,
+      "semantic": 0.007104290991759022,
+      "bleu": 0.0002841716396703609,
+      "rouge": 0.013924410343847685,
+      "fuzzy": 0.0002841716396703609,
+      "contains": 0.45581131003125885
+    }
+  },
+  "by_question_type": {
+    "what": {
+      "accuracy": 0.40826052422557585,
+      "correct": 514,
+      "total": 1259,
+      "error_rate": 0.5917394757744241
+    },
+    "is": {
+      "accuracy": 0.4803642572566875,
+      "correct": 844,
+      "total": 1757,
+      "error_rate": 0.5196357427433125
+    },
+    "direction": {
+      "accuracy": 0.45299500831946754,
+      "correct": 1089,
+      "total": 2404,
+      "error_rate": 0.5470049916805324
+    },
+    "yes_no": {
+      "accuracy": 0.4670219853431046,
+      "correct": 1402,
+      "total": 3002,
+      "error_rate": 0.5329780146568954
+    },
+    "spatial": {
+      "accuracy": 0.4680038204393505,
+      "correct": 980,
+      "total": 2094,
+      "error_rate": 0.5319961795606495
+    },
+    "which": {
+      "accuracy": 0.41878172588832485,
+      "correct": 165,
+      "total": 394,
+      "error_rate": 0.5812182741116751
+    },
+    "can": {
+      "accuracy": 0.4457831325301205,
+      "correct": 222,
+      "total": 498,
+      "error_rate": 0.5542168674698795
+    },
+    "how": {
+      "accuracy": 0.4025423728813559,
+      "correct": 190,
+      "total": 472,
+      "error_rate": 0.597457627118644
+    },
+    "are": {
+      "accuracy": 0.453448275862069,
+      "correct": 263,
+      "total": 580,
+      "error_rate": 0.546551724137931
+    },
+    "count": {
+      "accuracy": 0.42592592592592593,
+      "correct": 368,
+      "total": 864,
+      "error_rate": 0.5740740740740741
+    },
+    "color": {
+      "accuracy": 0.6307977736549165,
+      "correct": 340,
+      "total": 539,
+      "error_rate": 0.3692022263450835
+    },
+    "where": {
+      "accuracy": 0.4009216589861751,
+      "correct": 87,
+      "total": 217,
+      "error_rate": 0.599078341013825
+    },
+    "do": {
+      "accuracy": 0.35344827586206895,
+      "correct": 41,
+      "total": 116,
+      "error_rate": 0.646551724137931
+    },
+    "other": {
+      "accuracy": 0.7678571428571429,
+      "correct": 43,
+      "total": 56,
+      "error_rate": 0.2321428571428571
+    },
+    "does": {
+      "accuracy": 0.5892857142857143,
+      "correct": 33,
+      "total": 56,
+      "error_rate": 0.4107142857142857
+    },
+    "when": {
+      "accuracy": 0.45454545454545453,
+      "correct": 10,
+      "total": 22,
+      "error_rate": 0.5454545454545454
+    },
+    "why": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 1,
+      "error_rate": 1.0
+    },
+    "who": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 1,
+      "error_rate": 1.0
+    }
+  },
+  "by_answer_type": {
+    "other": {
+      "accuracy": 0.45581131003125885,
+      "correct": 1604,
+      "total": 3519,
+      "error_rate": 0.5441886899687411
+    }
+  },
+  "by_question_vocabulary": {
+    "total": {
+      "error_rate": 1.0,
+      "errors": 8,
+      "correct": 0,
+      "total": 8
+    },
+    "below": {
+      "error_rate": 1.0,
+      "errors": 7,
+      "correct": 0,
+      "total": 7
+    },
+    "dryer": {
+      "error_rate": 1.0,
+      "errors": 7,
+      "correct": 0,
+      "total": 7
+    },
+    "hit": {
+      "error_rate": 1.0,
+      "errors": 6,
+      "correct": 0,
+      "total": 6
+    },
+    "beside": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "mailbox": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "drink": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "integer": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "drop": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "gotta": {
+      "error_rate": 1.0,
+      "errors": 4,
+      "correct": 0,
+      "total": 4
+    },
+    "stairs": {
+      "error_rate": 1.0,
+      "errors": 4,
+      "correct": 0,
+      "total": 4
+    },
+    "they": {
+      "error_rate": 1.0,
+      "errors": 4,
+      "correct": 0,
+      "total": 4
+    },
+    "contain": {
+      "error_rate": 1.0,
+      "errors": 4,
+      "correct": 0,
+      "total": 4
+    },
+    "surround": {
+      "error_rate": 1.0,
+      "errors": 4,
+      "correct": 0,
+      "total": 4
+    },
+    "highest": {
+      "error_rate": 1.0,
+      "errors": 4,
+      "correct": 0,
+      "total": 4
+    },
+    "trashcans": {
+      "error_rate": 1.0,
+      "errors": 4,
+      "correct": 0,
+      "total": 4
+    },
+    "clocks": {
+      "error_rate": 1.0,
+      "errors": 4,
+      "correct": 0,
+      "total": 4
+    },
+    "tool": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "emergency": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "immediately": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "here": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "letter": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "nearest": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "hot": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "breakfast": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "orange": {
+      "error_rate": 1.0,
+      "errors": 3,
+      "correct": 0,
+      "total": 3
+    },
+    "oval": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "banner": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "organized": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "blow": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "friend": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "our": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "lined": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "rolled": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "source": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "stop": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "blows": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "holder": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "silver": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "fold": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "easily": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "scanner": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "videos": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "dispenses": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "pilot": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "walls": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "dirty": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "pulled": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "dispose": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    },
+    "twin": {
+      "error_rate": 1.0,
+      "errors": 2,
+      "correct": 0,
+      "total": 2
+    }
+  },
+  "by_situation_vocabulary": {
+    "dryer": {
+      "error_rate": 1.0,
+      "errors": 15,
+      "correct": 0,
+      "total": 15
+    },
+    "don": {
+      "error_rate": 1.0,
+      "errors": 10,
+      "correct": 0,
+      "total": 10
+    },
+    "biology": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "drink": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "report": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "store": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "shorter": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "laptop": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "together": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "sat": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "praying": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "photo": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "sprite": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "cutting": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "spill": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "expensive": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "carpet": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "projects": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "make": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "boredom": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "thrash": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "cold": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "smell": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "letter": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "porters": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "ponder": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "footrest": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "nothing": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "twiddling": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "bought": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "drop": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "thumbs": {
+      "error_rate": 1.0,
+      "errors": 5,
+      "correct": 0,
+      "total": 5
+    },
+    "because": {
+      "error_rate": 0.9,
+      "errors": 9,
+      "correct": 1,
+      "total": 10
+    },
+    "flyers": {
+      "error_rate": 0.8888888888888888,
+      "errors": 8,
+      "correct": 1,
+      "total": 9
+    },
+    "what": {
+      "error_rate": 0.8888888888888888,
+      "errors": 8,
+      "correct": 1,
+      "total": 9
+    },
+    "mine": {
+      "error_rate": 0.8,
+      "errors": 12,
+      "correct": 3,
+      "total": 15
+    },
+    "bucket": {
+      "error_rate": 0.8,
+      "errors": 12,
+      "correct": 3,
+      "total": 15
+    },
+    "backrest": {
+      "error_rate": 0.8,
+      "errors": 8,
+      "correct": 2,
+      "total": 10
+    },
+    "mess": {
+      "error_rate": 0.8,
+      "errors": 8,
+      "correct": 2,
+      "total": 10
+    },
+    "write": {
+      "error_rate": 0.8,
+      "errors": 8,
+      "correct": 2,
+      "total": 10
+    },
+    "wood": {
+      "error_rate": 0.8,
+      "errors": 8,
+      "correct": 2,
+      "total": 10
+    },
+    "put": {
+      "error_rate": 0.8,
+      "errors": 8,
+      "correct": 2,
+      "total": 10
+    },
+    "cups": {
+      "error_rate": 0.8,
+      "errors": 4,
+      "correct": 1,
+      "total": 5
+    },
+    "telephone": {
+      "error_rate": 0.8,
+      "errors": 4,
+      "correct": 1,
+      "total": 5
+    },
+    "travel": {
+      "error_rate": 0.8,
+      "errors": 4,
+      "correct": 1,
+      "total": 5
+    },
+    "crumpled": {
+      "error_rate": 0.8,
+      "errors": 4,
+      "correct": 1,
+      "total": 5
+    },
+    "cusion": {
+      "error_rate": 0.8,
+      "errors": 4,
+      "correct": 1,
+      "total": 5
+    },
+    "expired": {
+      "error_rate": 0.8,
+      "errors": 4,
+      "correct": 1,
+      "total": 5
+    },
+    "ready": {
+      "error_rate": 0.8,
+      "errors": 4,
+      "correct": 1,
+      "total": 5
+    },
+    "part": {
+      "error_rate": 0.8,
+      "errors": 4,
+      "correct": 1,
+      "total": 5
+    }
+  },
+  "by_answer_length": {
+    "1": {
+      "accuracy": 0.4725544311560871,
+      "correct": 1541,
+      "total": 3261
+    },
+    "2": {
+      "accuracy": 0.25892857142857145,
+      "correct": 58,
+      "total": 224
+    },
+    "5": {
+      "accuracy": 0.1111111111111111,
+      "correct": 1,
+      "total": 9
+    },
+    "4": {
+      "accuracy": 0.2,
+      "correct": 1,
+      "total": 5
+    },
+    "7": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2
+    },
+    "3": {
+      "accuracy": 0.06666666666666667,
+      "correct": 1,
+      "total": 15
+    },
+    "9": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 2
+    },
+    "8": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 1
+    }
+  },
+  "by_prediction_length": {
+    "pred_longer": {
+      "correct": 1603,
+      "total": 3515,
+      "accuracy": 0.45604551920341396
+    },
+    "pred_shorter": {
+      "correct": 0,
+      "total": 0,
+      "accuracy": 0.0
+    },
+    "pred_similar": {
+      "correct": 1,
+      "total": 4,
+      "accuracy": 0.25
+    }
+  },
+  "spatial_questions": {
+    "accuracy": 0.4573643410852713,
+    "correct": 1534,
+    "total": 3354,
+    "samples": [
+      {
+        "question": "What instrument in front of me is ebony and ivory?",
+        "correct": true,
+        "predicted": "The instrument in front of you is a piano. It is a upright piano with a dark brown finish and a keyboard that is primarily white with black keys.",
+        "gt": "piano"
+      },
+      {
+        "question": "Which direction should I go if I want to use soap?",
+        "correct": false,
+        "predicted": "If you want to use soap, you should go to the sink located in the bathroom.",
+        "gt": "right"
+      },
+      {
+        "question": "Can I still walk forward?",
+        "correct": false,
+        "predicted": "The video shows a room with a desk, chairs, and a whiteboard. The room appears to be a conference or meeting room.",
+        "gt": "no"
+      },
+      {
+        "question": "Is the toilet seat up or down?",
+        "correct": true,
+        "predicted": "The toilet seat is down.",
+        "gt": "down"
+      },
+      {
+        "question": "What is the first object to my direct left of me?",
+        "correct": false,
+        "predicted": "The first object to your direct left is a backpack. It is placed on a chair in the room.",
+        "gt": "window"
+      },
+      {
+        "question": "How many sinks are on the right?",
+        "correct": true,
+        "predicted": "There is one sink on the right side of the image.",
+        "gt": "one"
+      },
+      {
+        "question": "Can the amount of window on my right divided by three?",
+        "correct": false,
+        "predicted": "The image shows a bathroom with a sink, toilet, and shower area. The shower area includes a bench and grab bars for support. The sink has a faucet and a soap dispenser. The bathroom appears to be well-lit and clean.",
+        "gt": "no"
+      },
+      {
+        "question": "What is under the bed, suitcase or mat?",
+        "correct": true,
+        "predicted": "The suitcase is under the bed.",
+        "gt": "suitcase"
+      },
+      {
+        "question": "What red structure can I place my right hand on?",
+        "correct": true,
+        "predicted": "The image shows a room with a round table and chairs, a trash can, and a fireplace. There is no red structure visible in the image.",
+        "gt": "fireplace"
+      },
+      {
+        "question": "What is on the left of the clothing rack behind me?",
+        "correct": false,
+        "predicted": "There is a white lamp with a white lampshade on the left side of the clothing rack behind you.",
+        "gt": "box"
+      },
+      {
+        "question": "What is on the 9 o'clock of the chair that is on my 11 o'clock?",
+        "correct": false,
+        "predicted": "The chair on the 9 o'clock position is a Herman Miller Aeron chair. The Aeron chair is known for its ergonomic design and mesh backrest, which is visible in the image.",
+        "gt": "door"
+      },
+      {
+        "question": "Which direction should I go if I want to open the window?",
+        "correct": false,
+        "predicted": "To open the window in the room, you should look for a window handle or a latch on the door. If there is no visible handle or latch, you can try opening the window by pulling on the curtain or by using a window opener if available.",
+        "gt": "left"
+      },
+      {
+        "question": "How many chairsare immediately to the left?",
+        "correct": false,
+        "predicted": "There are two chairs immediately to the left in the image.",
+        "gt": "three"
+      },
+      {
+        "question": "How many columns of pillows are on the bed in front of me?",
+        "correct": true,
+        "predicted": "There are two columns of pillows on the bed in front of you.",
+        "gt": "two"
+      },
+      {
+        "question": "Is the bookshelf in front of me to the right tall or short?",
+        "correct": true,
+        "predicted": "The bookshelf in front of you is tall.",
+        "gt": "tall"
+      },
+      {
+        "question": "How many pillows are sitting on the couch to my right?",
+        "correct": true,
+        "predicted": "There are two pillows sitting on the couch to the right.",
+        "gt": "two"
+      },
+      {
+        "question": "Is the door closed or open to my left side?",
+        "correct": true,
+        "predicted": "The door to your left is closed.",
+        "gt": "closed"
+      },
+      {
+        "question": "What color is the refrigerator on my right?",
+        "correct": false,
+        "predicted": "The refrigerator on the right side of the image is black.",
+        "gt": "brown"
+      },
+      {
+        "question": "Can I see myself in the mirror without moving?",
+        "correct": false,
+        "predicted": "The image shows a hotel room with a bed, a desk with a chair, a shower, and a bathroom. The room appears to be well-lit and clean.",
+        "gt": "no"
+      },
+      {
+        "question": "How many dryers are to my right?",
+        "correct": false,
+        "predicted": "There are three dryers to the right of the image.",
+        "gt": "four"
+      }
+    ]
+  },
+  "numerical_questions": {
+    "accuracy": 0.4216710182767624,
+    "correct": 323,
+    "total": 766,
+    "samples": [
+      {
+        "question": "How many sinks are on the right?",
+        "correct": true,
+        "predicted": "There is one sink on the right side of the image.",
+        "gt": "one"
+      },
+      {
+        "question": "Can the amount of window on my right divided by three?",
+        "correct": false,
+        "predicted": "The image shows a bathroom with a sink, toilet, and shower area. The shower area includes a bench and grab bars for support. The sink has a faucet and a soap dispenser. The bathroom appears to be well-lit and clean.",
+        "gt": "no"
+      },
+      {
+        "question": "Is the amount of cabinet I am facing odd or even?",
+        "correct": true,
+        "predicted": "The cabinet you are facing appears to be odd in size. It is taller than the other cabinets in the video.",
+        "gt": "odd"
+      },
+      {
+        "question": "How many chairsare immediately to the left?",
+        "correct": false,
+        "predicted": "There are two chairs immediately to the left in the image.",
+        "gt": "three"
+      },
+      {
+        "question": "How many columns of pillows are on the bed in front of me?",
+        "correct": true,
+        "predicted": "There are two columns of pillows on the bed in front of you.",
+        "gt": "two"
+      },
+      {
+        "question": "How many pillows are sitting on the couch to my right?",
+        "correct": true,
+        "predicted": "There are two pillows sitting on the couch to the right.",
+        "gt": "two"
+      },
+      {
+        "question": "How many dryers are to my right?",
+        "correct": false,
+        "predicted": "There are three dryers to the right of the image.",
+        "gt": "four"
+      },
+      {
+        "question": "How many tables are directly in front of my position?",
+        "correct": false,
+        "predicted": "There are no tables directly in front of the person's position.",
+        "gt": "two"
+      },
+      {
+        "question": "How many couches are behind?",
+        "correct": true,
+        "predicted": "There is one couch behind the desk in the video.",
+        "gt": "one"
+      },
+      {
+        "question": "Is the counter in front of me cluttered or empty?",
+        "correct": true,
+        "predicted": "The counter in front of the person is cluttered.",
+        "gt": "cluttered"
+      },
+      {
+        "question": "How many towels are in the bathroom?",
+        "correct": false,
+        "predicted": "There are three towels in the bathroom.",
+        "gt": "eight"
+      },
+      {
+        "question": "Can the amount of sink behind me divided by three?",
+        "correct": true,
+        "predicted": "The image shows a bathroom with a sink and a toilet. The sink is located to the right of the toilet, and there is a wall-mounted toilet tissue dispenser to the left of the sink. There are no visible measurements or calculations in the image.",
+        "gt": "no"
+      },
+      {
+        "question": "Is the number of chairs under the table on my 8 o'clock direction odd or even?",
+        "correct": true,
+        "predicted": "The number of chairs under the table is even. There are two chairs visible under the table.",
+        "gt": "even"
+      },
+      {
+        "question": "Is the amount of towel I am facing odd or even?",
+        "correct": true,
+        "predicted": "The amount of towel you are facing is odd.",
+        "gt": "odd"
+      },
+      {
+        "question": "How many chairs are at the table behind me?",
+        "correct": false,
+        "predicted": "There are three chairs at the table behind you.",
+        "gt": "four"
+      },
+      {
+        "question": "How many armchairs are directly in front of me?",
+        "correct": false,
+        "predicted": "There is one armchair directly in front of the person.",
+        "gt": "zero"
+      },
+      {
+        "question": "Can the amount of trash can behind me be divided by three?",
+        "correct": true,
+        "predicted": "The trash can behind you appears to be a standard green trash can with a lid. It is not possible to divide the amount of trash in it by three without knowing the exact amount of trash in the can.",
+        "gt": "no"
+      },
+      {
+        "question": "Is the bathroom counter the same color as the bathtub behind me?",
+        "correct": false,
+        "predicted": "Yes, the bathroom counter is the same color as the bathtub behind you.",
+        "gt": "no"
+      },
+      {
+        "question": "How many backpacks are on the ottoman behind me to the left side?",
+        "correct": true,
+        "predicted": "There are two backpacks on the ottoman behind you to the left side.",
+        "gt": "two"
+      },
+      {
+        "question": "How many monitors are on top of the desk in front of me?",
+        "correct": false,
+        "predicted": "There are two monitors on top of the desk in front of the person.",
+        "gt": "three"
+      }
+    ]
+  },
+  "color_questions": {
+    "accuracy": 0.6277372262773723,
+    "correct": 172,
+    "total": 274,
+    "samples": [
+      {
+        "question": "What color is the refrigerator on my right?",
+        "correct": false,
+        "predicted": "The refrigerator on the right side of the image is black.",
+        "gt": "brown"
+      },
+      {
+        "question": "What color is the chair directly in front of me?",
+        "correct": true,
+        "predicted": "The chair directly in front of you is black.",
+        "gt": "black"
+      },
+      {
+        "question": "What color is the armchair on my left?",
+        "correct": false,
+        "predicted": "The armchair on your left is green.",
+        "gt": "brown"
+      },
+      {
+        "question": "What color is the backpack on the door behind me?",
+        "correct": true,
+        "predicted": "The backpack on the door behind you is black.",
+        "gt": "black"
+      },
+      {
+        "question": "Are all the chairs in the room the same color?",
+        "correct": true,
+        "predicted": "No, not all the chairs in the room are the same color. There are chairs of different colors in the room.",
+        "gt": "no"
+      },
+      {
+        "question": "Is the bathroom counter the same color as the bathtub behind me?",
+        "correct": false,
+        "predicted": "Yes, the bathroom counter is the same color as the bathtub behind you.",
+        "gt": "no"
+      },
+      {
+        "question": "What color are the two pillows on the couch to my left?",
+        "correct": false,
+        "predicted": "The two pillows on the couch to the left are orange and yellow.",
+        "gt": "orange yellow"
+      },
+      {
+        "question": "What is the color of the radiator behind me?",
+        "correct": true,
+        "predicted": "The color of the radiator behind you is white.",
+        "gt": "white"
+      },
+      {
+        "question": "What is the color of the bag?",
+        "correct": false,
+        "predicted": "The bag in the video is black.",
+        "gt": "brown"
+      },
+      {
+        "question": "What color are the cabinets in front of me?",
+        "correct": true,
+        "predicted": "The cabinets in front of you are brown.",
+        "gt": "brown"
+      },
+      {
+        "question": "What color is the wardrobe in front of me?",
+        "correct": false,
+        "predicted": "The wardrobe in front of the person is light brown in color.",
+        "gt": "yellow"
+      },
+      {
+        "question": "What color is the table in front of me?",
+        "correct": true,
+        "predicted": "The table in front of you is light brown or beige in color.",
+        "gt": "brown"
+      },
+      {
+        "question": "What color are the kitchen cabinets in front of me?",
+        "correct": true,
+        "predicted": "The kitchen cabinets in front of you are white.",
+        "gt": "white"
+      },
+      {
+        "question": "What is the color of the door on my 8 oclock?",
+        "correct": true,
+        "predicted": "The door on your 8 o'clock is brown.",
+        "gt": "brown"
+      },
+      {
+        "question": "Does the stool on my right have the same color as the sky?",
+        "correct": true,
+        "predicted": "No, the stool on the right is not the same color as the sky. The stool is green, while the sky is blue.",
+        "gt": "no"
+      },
+      {
+        "question": "What color is the toilet to my left?",
+        "correct": true,
+        "predicted": "The toilet to your left is white.",
+        "gt": "white"
+      },
+      {
+        "question": "What color is the chair I am using?",
+        "correct": true,
+        "predicted": "The chair you are using is red.",
+        "gt": "red"
+      },
+      {
+        "question": "What color is the desk behind me?",
+        "correct": true,
+        "predicted": "The desk behind you is brown.",
+        "gt": "brown"
+      },
+      {
+        "question": "What color is the wall in front of me that is the same color as the ocean?",
+        "correct": true,
+        "predicted": "The wall in front of you is blue.",
+        "gt": "blue"
+      },
+      {
+        "question": "Which color is the cabinet in front of me?",
+        "correct": true,
+        "predicted": "The cabinet in front of you is white.",
+        "gt": "white"
+      }
+    ]
+  },
+  "semantic_similarity_analysis": {
+    "errors": {
+      "mean": 0.1870932735473236,
+      "min": -0.10149215161800385,
+      "max": 0.8202286958694458,
+      "count": 1915
+    },
+    "correct": {
+      "mean": 0.3293533333243139,
+      "min": -0.09062471240758896,
+      "max": 0.8340476751327515,
+      "count": 1604
+    }
+  },
+  "error_examples": [
+    {
+      "question": "Which direction should I go if I want to use soap?",
+      "situation": "I am sitting on the toilet with a toilet paper roll to my left.",
+      "predicted": "If you want to use soap, you should go to the sink located in the bathroom.",
+      "gt": "right",
+      "question_id": 220602000017,
+      "scene_id": "scene0702_00"
+    },
+    {
+      "question": "Can I still walk forward?",
+      "situation": "I am facing a trash can, while there is a door on my right.",
+      "predicted": "The video shows a room with a desk, chairs, and a whiteboard. The room appears to be a conference or meeting room.",
+      "gt": "no",
+      "question_id": 220602000029,
+      "scene_id": "scene0169_00"
+    },
+    {
+      "question": "What is the first object to my direct left of me?",
+      "situation": "I am sitting on a chair facing the table and twiddling my thumbs together of boredom because I don't have a monitor on my table.",
+      "predicted": "The first object to your direct left is a backpack. It is placed on a chair in the room.",
+      "gt": "window",
+      "question_id": 220602000035,
+      "scene_id": "scene0300_00"
+    },
+    {
+      "question": "Can the amount of window on my right divided by three?",
+      "situation": "I am facing the toilet with the door in my nine o'clock direction.",
+      "predicted": "The image shows a bathroom with a sink, toilet, and shower area. The shower area includes a bench and grab bars for support. The sink has a faucet and a soap dispenser. The bathroom appears to be well-lit and clean.",
+      "gt": "no",
+      "question_id": 220602000048,
+      "scene_id": "scene0084_00"
+    },
+    {
+      "question": "Can I see the television from my position on the bed?",
+      "situation": "After an exhausted day, I am lying on the bed closest to the window with my head on the pillows.",
+      "predicted": "No, you cannot see the television from your position on the bed. The video shows a bedroom with a bed, a nightstand, a couch, a chair, a toilet, and a bathtub. There is no television visible in the video.",
+      "gt": "yes",
+      "question_id": 220602000053,
+      "scene_id": "scene0645_00"
+    },
+    {
+      "question": "What is on the left of the clothing rack behind me?",
+      "situation": "I am standing fixing the lamp that is on top of the table and behind me there is a clothing rack.",
+      "predicted": "There is a white lamp with a white lampshade on the left side of the clothing rack behind you.",
+      "gt": "box",
+      "question_id": 220602000091,
+      "scene_id": "scene0256_00"
+    },
+    {
+      "question": "What is on the 9 o'clock of the chair that is on my 11 o'clock?",
+      "situation": "I am sitting on the chair facing a chair with a table to my left.",
+      "predicted": "The chair on the 9 o'clock position is a Herman Miller Aeron chair. The Aeron chair is known for its ergonomic design and mesh backrest, which is visible in the image.",
+      "gt": "door",
+      "question_id": 220602000116,
+      "scene_id": "scene0427_00"
+    },
+    {
+      "question": "Which direction should I go if I want to open the window?",
+      "situation": "I am sitting in an armchair with a lamp behind me.",
+      "predicted": "To open the window in the room, you should look for a window handle or a latch on the door. If there is no visible handle or latch, you can try opening the window by pulling on the curtain or by using a window opener if available.",
+      "gt": "left",
+      "question_id": 220602000121,
+      "scene_id": "scene0633_00"
+    },
+    {
+      "question": "How many chairsare immediately to the left?",
+      "situation": "I am sitting on a chair facing a table on the other side of the room while there is a whiteboard to my right and there is also a table on my immediate left.",
+      "predicted": "There are two chairs immediately to the left in the image.",
+      "gt": "three",
+      "question_id": 220602000129,
+      "scene_id": "scene0015_00"
+    },
+    {
+      "question": "What color is the refrigerator on my right?",
+      "situation": "I am facing the paper towel dispenser with a chair in my six o'clock direction.",
+      "predicted": "The refrigerator on the right side of the image is black.",
+      "gt": "brown",
+      "question_id": 220602000182,
+      "scene_id": "scene0607_00"
+    },
+    {
+      "question": "Can I see myself in the mirror without moving?",
+      "situation": "I am facing black cabinet and the bed is behind me.",
+      "predicted": "The image shows a hotel room with a bed, a desk with a chair, a shower, and a bathroom. The room appears to be well-lit and clean.",
+      "gt": "no",
+      "question_id": 220602000190,
+      "scene_id": "scene0435_00"
+    },
+    {
+      "question": "How many dryers are to my right?",
+      "situation": "Just bought a can of sprite from the machine in front of me.",
+      "predicted": "There are three dryers to the right of the image.",
+      "gt": "four",
+      "question_id": 220602000200,
+      "scene_id": "scene0678_00"
+    },
+    {
+      "question": "How many tables are directly in front of my position?",
+      "situation": "I am facing a table, while being between two rack stands.",
+      "predicted": "There are no tables directly in front of the person's position.",
+      "gt": "two",
+      "question_id": 220602000201,
+      "scene_id": "scene0208_00"
+    },
+    {
+      "question": "Which direction should I go if I want to open the window?",
+      "situation": "I am sitting on a chair while facing the door and there is another chair on my left next to me.",
+      "predicted": "To open the window, you should look for the window handle or the window itself. If the window is closed, you can usually find a handle or a latch to open it. If the window is open, you can simply pull the window open.",
+      "gt": "right",
+      "question_id": 220602000206,
+      "scene_id": "scene0354_00"
+    },
+    {
+      "question": "Which direction should I go if I want to exit the room?",
+      "situation": "I am standing in front of a table and facing it while there is a rack on my left within reach.",
+      "predicted": "If you want to exit the room, you should go to the door on the right side of the image. The door is located on the right side of the room, and it appears to be made of wood.",
+      "gt": "backward",
+      "question_id": 220602000218,
+      "scene_id": "scene0412_00"
+    },
+    {
+      "question": "Is the book shelf directly in front of me or behind me?",
+      "situation": "I am throwing trash into the trash can while facing the table with backpack.",
+      "predicted": "The bookshelf is directly in front of you.",
+      "gt": "behind",
+      "question_id": 220602000252,
+      "scene_id": "scene0300_00"
+    },
+    {
+      "question": "What is to my right hanging on the shower bar?",
+      "situation": "I am throwing trash into the trash can with the toilet to my right.",
+      "predicted": "The shower bar in the bathroom has a white towel hanging on it.",
+      "gt": "towels",
+      "question_id": 220602000310,
+      "scene_id": "scene0406_00"
+    },
+    {
+      "question": "How many towels are in the bathroom?",
+      "situation": "I am facing the toilet with a door behind me.",
+      "predicted": "There are three towels in the bathroom.",
+      "gt": "eight",
+      "question_id": 220602000312,
+      "scene_id": "scene0406_00"
+    },
+    {
+      "question": "What color is the armchair on my left?",
+      "situation": "I am sitting on an armchair while having another one to my left.",
+      "predicted": "The armchair on your left is green.",
+      "gt": "brown",
+      "question_id": 220602000335,
+      "scene_id": "scene0616_00"
+    },
+    {
+      "question": "What is hung on the nook to my right side?",
+      "situation": "I am walking into the room with the bathroom vanity on my right.",
+      "predicted": "The image shows a small room with a wooden door, a bed with a green and white patterned blanket, and a small table with a chair. There is also a wall socket on the wall to the right of the bed.",
+      "gt": "ironing board",
+      "question_id": 220602000371,
+      "scene_id": "scene0221_00"
+    },
+    {
+      "question": "Which way should I leave?",
+      "situation": "Crouching in front of the bench and emptying the trash.",
+      "predicted": "The image shows a bathroom with various items and fixtures. Here are some details:\n\n1. **Door**: The door is closed, and there is a sign on it.\n2. **Bench**: There is a bench against the wall.\n3. **Ironing Board**: There is an ironing board against the wall.\n4. **Sink**: There is a sink with a mirror above it.\n5. **Toilet**: There is a toilet next to the sink.\n6. **Trash Can**: There is a trash can next to the sink.\n7. **Telephone**: There is a telephone on the wall.\n8. **Drawer",
+      "gt": "left",
+      "question_id": 220602000377,
+      "scene_id": "scene0574_00"
+    },
+    {
+      "question": "Where can I find a book to read?",
+      "situation": "I am picking up a bag with the coffee table on my left.",
+      "predicted": "The image shows a living room with a couch, a coffee table, a bookshelf, and a chair. There are also some scattered items on the coffee table, such as a bottle, a pair of scissors, and a pen. The bookshelf is filled with various books, and there is a chair with a pillow on it. The room appears to be messy, with clothes and other items scattered around.",
+      "gt": "left",
+      "question_id": 220602000415,
+      "scene_id": "scene0203_00"
+    },
+    {
+      "question": "Is the table in front or at my back?",
+      "situation": "I am writing on the blackboard and there is a table behind my back and a chair on my left within reach.",
+      "predicted": "The table is in front of you.",
+      "gt": "back",
+      "question_id": 220602000423,
+      "scene_id": "scene0257_00"
+    },
+    {
+      "question": "How many chairs are at the table behind me?",
+      "situation": "I am standing in front of table and facing trashcan.",
+      "predicted": "There are three chairs at the table behind you.",
+      "gt": "four",
+      "question_id": 220602000425,
+      "scene_id": "scene0578_00"
+    },
+    {
+      "question": "If I lay down on the bed infront of me, what item will be on my immediate left?",
+      "situation": "I am sitting on the sofa chair and there is a suitcase on my right, we use the suitcase for travel.",
+      "predicted": "The item that will be on your immediate left while lying down on the bed in front of you is the bed itself.",
+      "gt": "nightstand",
+      "question_id": 220602000432,
+      "scene_id": "scene0435_00"
+    },
+    {
+      "question": "What is below the picture on my left?",
+      "situation": "Crouching and changing the trash bag.",
+      "predicted": "The picture on the left side of the bathroom is a towel rack.",
+      "gt": "toilet",
+      "question_id": 220602000438,
+      "scene_id": "scene0583_00"
+    },
+    {
+      "question": "What is on top of the desk that is on my left?",
+      "situation": "I am standing ahead of the mat and my backside is facing the window and looking at the chair.",
+      "predicted": "There is a framed picture or artwork on top of the desk that is on your left.",
+      "gt": "book",
+      "question_id": 220602000442,
+      "scene_id": "scene0535_00"
+    },
+    {
+      "question": "How many armchairs are directly in front of me?",
+      "situation": "I just walked into the room through the doors.",
+      "predicted": "There is one armchair directly in front of the person.",
+      "gt": "zero",
+      "question_id": 220602000449,
+      "scene_id": "scene0203_00"
+    },
+    {
+      "question": "What two objects of the same item are on the right hand side of me?",
+      "situation": "I am resting on my armchair with my feet on the ottoman, and there is another armchair to my left.",
+      "predicted": "The two objects on the right hand side of the image are a lamp and a trash can.",
+      "gt": "beds",
+      "question_id": 220602000458,
+      "scene_id": "scene0645_00"
+    },
+    {
+      "question": "What is on the right of the mini fridge that is far away in front of me?",
+      "situation": "I am standing in front of door and the bathroom door is opening on my right.",
+      "predicted": "The image shows a hotel room with a bed, a desk, a chair, and a bathroom. The desk has a laptop, a water bottle, and some papers on it. The chair is black and has a mesh backrest. The bathroom has a toilet, a bathtub, and a shower curtain. The mini fridge is located to the left of the desk.",
+      "gt": "sofa chair",
+      "question_id": 220602000487,
+      "scene_id": "scene0435_00"
+    }
+  ],
+  "correct_examples": [
+    {
+      "question": "What instrument in front of me is ebony and ivory?",
+      "situation": "I am standing by the ottoman on my right facing a couple of toolboxes.",
+      "predicted": "The instrument in front of you is a piano. It is a upright piano with a dark brown finish and a keyboard that is primarily white with black keys.",
+      "gt": "piano",
+      "question_id": 220602000002,
+      "scene_id": "scene0050_00"
+    },
+    {
+      "question": "Is the toilet seat up or down?",
+      "situation": "I am enjoying a hot bath and the shower curtain is hanging on my right.",
+      "predicted": "The toilet seat is down.",
+      "gt": "down",
+      "question_id": 220602000034,
+      "scene_id": "scene0153_00"
+    },
+    {
+      "question": "How many sinks are on the right?",
+      "situation": "I am sitting on the toilet and on my left side is toilet paper.",
+      "predicted": "There is one sink on the right side of the image.",
+      "gt": "one",
+      "question_id": 220602000042,
+      "scene_id": "scene0084_00"
+    },
+    {
+      "question": "Is the amount of cabinet I am facing odd or even?",
+      "situation": "Walking towards the window but I just get blocked by a fan.",
+      "predicted": "The cabinet you are facing appears to be odd in size. It is taller than the other cabinets in the video.",
+      "gt": "odd",
+      "question_id": 220602000059,
+      "scene_id": "scene0593_00"
+    },
+    {
+      "question": "What is under the bed, suitcase or mat?",
+      "situation": "I am facing the door and the bathroom door opening is on my left side.",
+      "predicted": "The suitcase is under the bed.",
+      "gt": "suitcase",
+      "question_id": 220602000062,
+      "scene_id": "scene0435_00"
+    },
+    {
+      "question": "What red structure can I place my right hand on?",
+      "situation": "I am standing in front of coffee table and there is a window on my left.",
+      "predicted": "The image shows a room with a round table and chairs, a trash can, and a fireplace. There is no red structure visible in the image.",
+      "gt": "fireplace",
+      "question_id": 220602000082,
+      "scene_id": "scene0616_00"
+    },
+    {
+      "question": "Is there anywhere to sit down in the room?",
+      "situation": "I am opening the wardrobe closet.",
+      "predicted": "Yes, there is a chair in the room. It is located near the red curtain and the white desk.",
+      "gt": "yes",
+      "question_id": 220602000085,
+      "scene_id": "scene0246_00"
+    },
+    {
+      "question": "How many columns of pillows are on the bed in front of me?",
+      "situation": "I am on bed closest to the curtain and facing other bed.",
+      "predicted": "There are two columns of pillows on the bed in front of you.",
+      "gt": "two",
+      "question_id": 220602000133,
+      "scene_id": "scene0435_00"
+    },
+    {
+      "question": "Is the bookshelf in front of me to the right tall or short?",
+      "situation": "After putting the book on my right, I am leaning against the wall and thinking about what I just read.",
+      "predicted": "The bookshelf in front of you is tall.",
+      "gt": "tall",
+      "question_id": 220602000135,
+      "scene_id": "scene0535_00"
+    },
+    {
+      "question": "How many pillows are sitting on the couch to my right?",
+      "situation": "I am facing a door and there is a cabinet on my right.",
+      "predicted": "There are two pillows sitting on the couch to the right.",
+      "gt": "two",
+      "question_id": 220602000163,
+      "scene_id": "scene0591_00"
+    },
+    {
+      "question": "Is the door closed or open to my left side?",
+      "situation": "I am standing in between the toilet on my right and the sink on my left.",
+      "predicted": "The door to your left is closed.",
+      "gt": "closed",
+      "question_id": 220602000173,
+      "scene_id": "scene0146_00"
+    },
+    {
+      "question": "How many couches are behind?",
+      "situation": "I am sitting on a couch with a pillow facing another couch and the pillow is on my right.",
+      "predicted": "There is one couch behind the desk in the video.",
+      "gt": "one",
+      "question_id": 220602000261,
+      "scene_id": "scene0025_00"
+    },
+    {
+      "question": "Can I see chair if I turn around?",
+      "situation": "I am taking out the white ball from the side pocket while my beer on the table is bot being drunk by me. I am also facing the window.",
+      "predicted": "Yes, you can see the chair if you turn around. The chair is located to the left of the pool table.",
+      "gt": "yes",
+      "question_id": 220602000272,
+      "scene_id": "scene0618_00"
+    },
+    {
+      "question": "What color is the chair directly in front of me?",
+      "situation": "I am sitting on the middle chair of the row of chairs while facing the whiteboard across the room.",
+      "predicted": "The chair directly in front of you is black.",
+      "gt": "black",
+      "question_id": 220602000291,
+      "scene_id": "scene0414_00"
+    },
+    {
+      "question": "Is the counter in front of me cluttered or empty?",
+      "situation": "I am standing in front of the cabinets and there is a cart on my right.",
+      "predicted": "The counter in front of the person is cluttered.",
+      "gt": "cluttered",
+      "question_id": 220602000303,
+      "scene_id": "scene0704_00"
+    },
+    {
+      "question": "Is the toilet on my left or right?",
+      "situation": "I am using the towel and there is a bathroom cabinet on my right.",
+      "predicted": "The toilet is on the right side of the image.",
+      "gt": "right",
+      "question_id": 220602000304,
+      "scene_id": "scene0153_00"
+    },
+    {
+      "question": "What color is the backpack on the door behind me?",
+      "situation": "I am walking into the room with the toilet paper dispenser in my twelve o'clock direction.",
+      "predicted": "The backpack on the door behind you is black.",
+      "gt": "black",
+      "question_id": 220602000344,
+      "scene_id": "scene0146_00"
+    },
+    {
+      "question": "What is in the cabinet to my left?",
+      "situation": "I am on the end of the couch closest to the armchair with chairs behind it, and I am facing the end table closest to me.",
+      "predicted": "The cabinet to the left of the image contains several items. There are several books visible, some of which are stacked on top of each other. Additionally, there are some papers or documents placed inside the cabinet.",
+      "gt": "book",
+      "question_id": 220602000345,
+      "scene_id": "scene0690_00"
+    },
+    {
+      "question": "Is the shape of radiator on my left round or rectangular?",
+      "situation": "I am standing inside stand up shower while the seat is on my left side and the shower curtain is in my ten o'clock direction.",
+      "predicted": "The radiator on the wall is rectangular.",
+      "gt": "rectangular",
+      "question_id": 220602000353,
+      "scene_id": "scene0084_00"
+    },
+    {
+      "question": "Is the curtain to my left open or closed?",
+      "situation": "I am throwing away a used tissue and the toilet is on my left.",
+      "predicted": "The curtain to the left of the shower is open.",
+      "gt": "open",
+      "question_id": 220602000354,
+      "scene_id": "scene0702_00"
+    }
+  ]
+}
